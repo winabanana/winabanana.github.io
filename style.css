@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Milliard';
+    src: url('fonts/Rene\ Bieder\ \ Milliard\ Light.otf');
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src: url('fonts/SIMPLIFICA\ Typeface.ttf');
+}
+
+
+body {
+    font-family: 'Milliard';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+h1,
+h2 {
+    font-family: 'Simplifica';
+    font-size: 3em;
+}
+
+:root {
+    --salmon-nav: #FA8072;
+    --salmon-wave: darksalmon;
+    --peacock: #326872;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: darksalmon;
+}
+
+#projects {
+    background-color: darksalmon;
+}
+
+footer {
+    background-color: darksalmon;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: slategrey;
+    transition: 1s;
+}
+
+a:hover {
+    color: salmon;
+}
+
+h2 {
+    color: var(--peacock);
+}
+
+h2::first-letter {
+    color: var(--peacock);
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.nav-warna {
+    background-color: var(--salmon-nav);
+}
+
+.btn-primary {
+    background-color: var(--peacock);
+    border-color: var(--peacock);
+}
+
+.btn-primary:hover {
+    background-color: var(--salmon-wave);
+    border-color: var(--salmon-wave);
+}
+
+.btn {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+}
+
+
+/* [1] The container */
+.img-hover-zoom {
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform 1s, filter 1.5s ease;
+    filter: brightness(70%);
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+input {
+    box-shadow: none !important;
+}
+
+textarea {
+    box-shadow: none !important;
+}
+
+button {
+    box-shadow: none !important;
+}
+
+/* Social Media */
+
+.sosmed i {
+    font-size: 17px;
+    color: var(--peacock);
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: #ffffff;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+/* .sosmed i:hover {
+    background-color: var(--salmon-nav);
+} */
+
+
+.sosmed i:hover:nth-child(1) {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    color: #3b5998;
+    transition: all 0.5s ease;
+}
+
+.sosmed i:hover .bi-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.sosmed i:hover:nth-child(2) {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    color: #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.sosmed i:hover .bi-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.sosmed i:hover .bi-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.sosmed i:hover:nth-child(3) {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    color: #00aced;
+    transition: all 0.5s ease;
+}
+
+/* Akhir social media */
